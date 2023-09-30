@@ -1,0 +1,26 @@
+.nav-link{
+    transform: all 0.2s;
+    position:relative;
+  }
+  /* .nav-link:hover{
+text-decoration: underline; 
+border-bottom: 2px solid white;
+  } */
+  .nav-link:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+  }
+.wh{
+height:410px; 
+width:auto;
+}
+.dropdown-item:hover{
+background-color: gray;
+color: white;
+}

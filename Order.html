@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Brooklin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>Slider</h1> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html"><img src="book.png" style="height: auto; width: 20%;"> Brokelin Books</a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+            </li>
+            <div class="dropdown">
+              <a class="btn  nav-link active" data-bs-toggle="dropdown">
+                Categories
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white " href="#">Urdu</a></li>
+                <li><a class="dropdown-item text-white " href="#">English</a></li>
+               
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="Order.html">OrderNow</a>
+            </li>
+          
+          </ul>
+        
+        <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+ Sign in
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Log in Here</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <form action="/action_page.php" class="container">
+        <div class="mb-3 mt-3 container">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3 container">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3 container">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+     
+        <button type="submit" class="btn btn-secondary"> submit</button>
+      </form>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+         
+        </div>
+      </div>
+    </nav>
+    <h1 class="container-fluid text-white bg-secondary h1 text-center mt-2 mb-4">Shopping Form</h1>
+    <div class="container mt-5">
+
+      <form>
+          <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="ordername" class="form-label">OrderName</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Desired Book With Author">
+        </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+          </div>
+          <div class="mb-3">
+              <label for="address" class="form-label">Shipping Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Street Address">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" placeholder="City">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" placeholder="State">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" placeholder="ZIP Code">
+          </div>
+          <div class="mb-3">
+              <label for="card" class="form-label">Credit Card Number</label>
+              <input type="text" class="form-control" id="card" placeholder="Credit Card Number">
+          </div>
+          <div class="mb-3">
+              <label for="exp" class="form-label">Expiration Date</label>
+              <input type="text" class="form-control" id="exp" placeholder="MM/YY">
+          </div>
+          <div class="mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="CVV">
+          </div>
+          <button type="submit" class="btn btn-dark" onclick="redirectToURL()">Submit</button>
+      </form>
+  </div>
+
+    <!-- carousel-dark -->
+    <div class="d-flex flex-wrap justify-content-between mt-2">
+     
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="alche.webp" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"The Alchemist" by Paulo Coelho</h5>
+          <p class="card-text">A philosophical and inspirational novel that tells the story of Santiago, a shepherd boy, on his quest to discover his personal legend and fulfill his dreams.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="raqs.png" class="card-img-top wh" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Raqs-e-Bismil" by Nabila Aziz</h5>
+          <p class="card-text">A contemporary Urdu novel that weaves a complex love story against the backdrop of societal expectations and challenges faced by the protagonists.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="dewan.webp" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Diwan-e-Ghalib"</h5>
+          <p class="card-text">"Diwan-e-Ghalib" is a comprehensive collection of Mirza Ghalib's Urdu and Persian poetry. It includes his ghazals, nazms, and other poetic forms. This collection is considered a masterpiece of Urdu literature.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="mir.avif" class="card-img-top wh" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Kulliyat-e-Mir"</h5>
+          <p class="card-text"> "Kulliyat-e-Mir" is a comprehensive collection of Mir Taqi Mir's poetry, which includes his ghazals, qasidas, rubais, and other poetic forms. This collection is a treasure trove of classical Urdu and Persian poetry.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="text-center text-white" style="background-color: #000000;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+        <div>
+          "Unlocking Knowledge: A Journey of Lifelong Learning"</div>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.youtube.com/@questionabletechie110">AhsanRazaBaloch</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+</body>
+</html>

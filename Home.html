@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Brooklin</title>
+
+</head>
+<body>
+    <!-- <h1>Slider</h1> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html"><img src="book.png" style="height: auto; width: 20%;"> Brokelin Books</a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+            </li>
+            <div class="dropdown">
+              <a class="btn  nav-link active" data-bs-toggle="dropdown">
+                Categories
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white " href="#">Urdu</a></li>
+                <li><a class="dropdown-item text-white " href="#">English</a></li>
+               
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="Order.html">OrderNow</a>
+            </li>
+          
+          
+          </ul>
+        
+        <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+ Sign in
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Log in Here</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <form action="/action_page.php" class="container">
+        <div class="mb-3 mt-3 container">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3 container">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3 container">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+         
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-2" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="book.jpeg" class="d-block w-100 h-80" alt="...">
+          <div class="carousel-caption d-none d-md-block text-white bg-dark">
+            <h5>Books By Brookelin Store</h5>
+            <p>Your literary haven, offering a vast collection of books to satisfy every reader's passion. Explore our shelves and embark on a journey through the world of words.</p>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval="2000">
+          <img src="Pic3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-white bg-dark">
+            <h5>Books By Brookelin Store</h5>
+            <p>Your literary haven, offering a vast collection of books to satisfy every reader's passion. Explore our shelves and embark on a journey through the world of words.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="book.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-white bg-dark">
+            <h5>Books By Brookelin Store</h5>
+            <p>A sanctuary for book lovers, where pages turn into adventures and knowledge finds its home.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel-dark -->
+    <div class="d-flex flex-wrap justify-content-between mt-2">
+      <div class="card m-3" style="width: 18rem;">
+        <img src="sorcer.jpg" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Harry Potter and the Sorcerer's Stone" by J.K. Rowling</h5>
+          <p class="card-text">The start of the iconic Harry Potter series, this book introduces readers to a young wizard named Harry Potter as he embarks on his magical journey at Hogwarts School of Witchcraft and Wizardry.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="beasts1.jpg" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Fantastic Beasts and Where to Find Them" by J.K. Rowling</h5>
+          <p class="card-text">Explore the magical creatures and wizarding world beyond Harry Potter's adventures in this captivating book, which delves into the world of magizoology.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="secret.jpg" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"The Secret" by Rhonda Byrne</h5>
+          <p class="card-text">This self-help book explores the law of attraction and the power of positive thinking, guiding readers on a journey to manifest their desires and achieve personal success.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="magic.jpg" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"The Magic" by Rhonda Byrne</h5>
+          <p class="card-text">A guide to gratitude and the positive impact it can have on one's life, "The Magic" provides a 28-day program of daily exercises to cultivate a thankful mindset.
+          </p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="alche.webp" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"The Alchemist" by Paulo Coelho</h5>
+          <p class="card-text">A philosophical and inspirational novel that tells the story of Santiago, a shepherd boy, on his quest to discover his personal legend and fulfill his dreams.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="raqs.png" class="card-img-top wh" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Raqs-e-Bismil" by Nabila Aziz</h5>
+          <p class="card-text">A contemporary Urdu novel that weaves a complex love story against the backdrop of societal expectations and challenges faced by the protagonists.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="dewan.webp" class="card-img-top wh"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Diwan-e-Ghalib"</h5>
+          <p class="card-text">"Diwan-e-Ghalib" is a comprehensive collection of Mirza Ghalib's Urdu and Persian poetry. It includes his ghazals, nazms, and other poetic forms. This collection is considered a masterpiece of Urdu literature.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 18rem;">
+        <img src="mir.avif" class="card-img-top wh" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Kulliyat-e-Mir"</h5>
+          <p class="card-text"> "Kulliyat-e-Mir" is a comprehensive collection of Mir Taqi Mir's poetry, which includes his ghazals, qasidas, rubais, and other poetic forms. This collection is a treasure trove of classical Urdu and Persian poetry.</p>
+          <a href="#" class="btn btn-dark">More...</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- footer -->
+
+    <footer class="text-center text-white" style="background-color: #000000;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          
+        <div>
+          
+          "Unlocking Knowledge: A Journey of Lifelong Learning"</div>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://www.youtube.com/@questionabletechie110">AhsanRazaBaloch</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+</body>
+</html>
